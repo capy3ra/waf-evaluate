@@ -99,7 +99,7 @@ payload:
   - 'php://filter/convert.base64-encode/resource=index'
   - 'php://filter/convert.base64-encode/resource=index.php'
 encoder:
-  - Plain
+  - URL
 placeholder:
-  - URLParam
+
   - HTMLForm

