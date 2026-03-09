@@ -17,10 +17,10 @@ payload:
   - "-1%22%20OR%203%2b615-615-1%3d0%2b0%2b0%2b1%20--%20"
   - "-1%22%20OR%203*2<(0%2b5%2b615-615)%20--%20"
   - "-1%22%20OR%203*2>(0%2b5%2b615-615)%20--%20"
-  - "if(now()%3dsysdate()%2csleep(6)%2c0)/*'XOR(if(now()%3dsysdate()%2csleep(6)%2c0))OR'%22XOR(if(now()%3dsysdate()%2csleep(6)%2c0))OR%22*/"
-  - "if(now()%3dsysdate()%2csleep(0)%2c0)/*'XOR(if(now()%3dsysdate()%2csleep(0)%2c0))OR'%22XOR(if(now()%3dsysdate()%2csleep(0)%2c0))OR%22*/"
-  - "if(now()%3dsysdate()%2csleep(4)%2c0)/*'XOR(if(now()%3dsysdate()%2csleep(4)%2c0))OR'%22XOR(if(now()%3dsysdate()%2csleep(4)%2c0))OR%22*/"
-  - "if(now()%3dsysdate()%2csleep(2)%2c0)/*'XOR(if(now()%3dsysdate()%2csleep(2)%2c0))OR'%22XOR(if(now()%3dsysdate()%2csleep(2)%2c0))OR%22*/"
+  - 'if(now()%3dsysdate()%2csleep(6)%2c0)/*"XOR(if(now()%3dsysdate()%2csleep(6)%2c0))OR"XOR(if(now()%3dsysdate()%2csleep(6)%2c0))OR*/'
+  - 'if(now()%3dsysdate()%2csleep(0)%2c0)/*"XOR(if(now()%3dsysdate()%2csleep(0)%2c0))OR"XOR(if(now()%3dsysdate()%2csleep(0)%2c0))OR*/'
+  - 'if(now()%3dsysdate()%2csleep(4)%2c0)/*"XOR(if(now()%3dsysdate()%2csleep(4)%2c0))OR"XOR(if(now()%3dsysdate()%2csleep(4)%2c0))OR*/'
+  - 'if(now()%3dsysdate()%2csleep(2)%2c0)/*"XOR(if(now()%3dsysdate()%2csleep(2)%2c0))OR"XOR(if(now()%3dsysdate()%2csleep(2)%2c0))OR*/'
   - "-1+UNION+SELECT+GROUP_CONCAT(table_name)+FROM+information_schema.tables"
   - "-1%20OR%202%2b281-281-1%3d0%2b0%2b0%2b1%20--%20"
   - "-1%20OR%203%2b281-281-1%3d0%2b0%2b0%2b1%20--%20"
@@ -43,7 +43,7 @@ payload:
   - "rss2'%20AND%202%2b1-1-1%3d0%2b0%2b0%2b1%20AND%20'LpaH'%3d'LpaH"
   - "rss2%22%20AND%202%2b1-1-1%3d0%2b0%2b0%2b1%20AND%20%22tFzX%22%3d%22tFzX"
   - "rss2%25'%20AND%202%2b1-1-1%3d0%2b0%2b0%2b1%20AND%20'KL3q'%21%3d'KL3q%25"
-  - "(select(0)from(select(sleep(6)))v)/*'%2b(select(0)from(select(sleep(6)))v)%2b'%22%2b(select(0)from(select(sleep(6)))v)%2b%22*/"
+  - "(select(0)from(select(sleep(6)))v)/*%2b(select(0)from(select(sleep(6)))v)%2b%22%2b(select(0)from(select(sleep(6)))v)%2b%22*/"
   - "1%20waitfor%20delay%20'0:0:2'%20--%20"
   - "wxkFJ3XC';%20waitfor%20delay%20'0:0:2'%20--%20"
   - "RhGGaxt6');%20waitfor%20delay%20'0:0:2'%20--%20"
@@ -51,7 +51,7 @@ payload:
   - "4FBRgEUZ';select%20pg_sleep(2);%20--%20"
   - "py9MBhSc');select%20pg_sleep(2);%20--%20"
   - "lRT8oUqv'));select%20pg_sleep(4);%20--%20"
-  - "(select(0)from(select(sleep(4)))v)/*'%2b(select(0)from(select(sleep(4)))v)%2b'%22%2b(select(0)from(select(sleep(4)))v)%2b%22*/"
+  - "(select(0)from(select(sleep(4)))v)/*%2b(select(0)from(select(sleep(4)))v)%2b%22%2b(select(0)from(select(sleep(4)))v)%2b%22*/"
   - "-1;%20waitfor%20delay%20'0:0:4'%20--%20"
   - "-1);%20waitfor%20delay%20'0:0:6'%20--%20"
   - "-1));%20waitfor%20delay%20'0:0:6'%20--%20"
@@ -60,11 +60,11 @@ payload:
   - "-1;select%20pg_sleep(4);%20--%20"
   - "-1);select%20pg_sleep(4);%20--%20"
   - "-1));select%20pg_sleep(4);%20--%20"
-  - "if(now()%3dsysdate()%2csleep(3)%2c0)/*'XOR(if(now()%3dsysdate()%2csleep(3)%2c0))OR'%22XOR(if(now()%3dsysdate()%2csleep(3)%2c0))OR%22*/"
+  - "if(now()%3dsysdate()%2csleep(3)%2c0)/*'XOR(if(now()%3dsysdate()%2csleep(3)%2c0))OR'XOR(if(now()%3dsysdate()%2csleep(3)%2c0))OR'*/"
   - "lostpassword'%20AND%202%2b1-1-1%3d0%2b0%2b0%2b1%20AND%20'1a0X'%3d'1a0X"
   - "lostpassword%22%20AND%202%2b1-1-1%3d0%2b0%2b0%2b1%20AND%20%22jVFJ%22%3d%22jVFJ"
   - "lostpassword%25'%20AND%202%2b1-1-1%3d0%2b0%2b0%2b1%20AND%20'wrqO'%21%3d'wrqO%25"
-  - "(select(0)from(select(sleep(3)))v)/*'%2b(select(0)from(select(sleep(3)))v)%2b'%22%2b(select(0)from(select(sleep(3)))v)%2b%22*/"
+  - "(select(0)from(select(sleep(3)))v)/*'%2b(select(0)from(select(sleep(3)))v)%2b'%2b(select(0)from(select(sleep(3)))v)%2b'*/"
   - "1%2c(select%20case%20when%20(735%3d735)%20then%201%20else%201*(select%20table_name%20from%20information_schema.tables)end)%3d1"
   - "1%2c(select%20case%20when%20(2%2b1-1-1%3d0%2b0%2b0%2b1)%20then%201%20else%201*(select%20table_name%20from%20information_schema.tables)end)%3d1"
   - "1%2c(select%20case%20when%20(3%2b1-1-1%3d0%2b0%2b0%2b1)%20then%201%20else%201*(select%20table_name%20from%20information_schema.tables)end)%3d1"
@@ -104,5 +104,5 @@ payload:
 encoder:
   - Plain
 placeholder:
-  - URLParam
+
   - HTMLForm

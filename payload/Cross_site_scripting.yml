@@ -239,7 +239,7 @@ payload:
   - "<IMG SRC=java%00script:alert(\"XSS\")>"
   - "<SCR%00IPT>alert(\"XSS\")</SCR%00IPT>"
 encoder:
-  - Plain
+  - URL
 placeholder:
-  - URLParam
+
   - HTMLForm

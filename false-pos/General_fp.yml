@@ -1,0 +1,62 @@
+payload:
+  - 'select one item from these funny things =)'
+  - 'select one item from these funny things :)'
+  - 'select something "nice" from the basket'
+  - 'Item #3 seems a better choice from all the items we can select'
+  - 'from all the items we can select, I think that #3 would be better'
+  - 'I think it better to select one from this basket (as this one is bigger'
+  - 'We have a wide selection to choose from :)'
+  - 'nice selection of fromage (although they stink) '
+  - 'I had no such selection where from I arrived =)'
+  - 'I had no such selection wherefrom I arrived  (and I like it)'
+  - 'Select a new chinstrap for your bike helmet; it could save your life'
+  - 'A select few private pilots can fly under instrument flight rules ("IFR"); meaning they can fly an airplane using instruments only'
+  - 'nice selection of ascii art works'
+  - 'I would like to select something whenever it is possible (but before the trip to Athens) '
+  - 'based on a credit report from transunion, I was preselected for a credit card (although I did not want it)'
+  - 'Dropping the project is not acceptable; we inverted too many resources in it'
+  - 'I had to drop the plan (as there is no chance that it will be functional)'
+  - 'this is not good; drop the item you are holding'
+  - 'this is not good; dropping the plan is our only option'
+  - 'it does not look good; shutdown the system!'
+  - 'The artwork was dropped by Frank Teschemacher (a great artist btw)'
+  - 'I consider dropping this schematic; It is not so good'
+  - 'Have you seen the hydropower plant schematics? (they are very impractical)'
+  - 'We dropped a million Deutschemark to get the schematic (and it was not worth it)'
+  - 'Just be selective about where you drop your garbage in Germany (the exchange rate makes Deutschemark fines painful)'
+  - 'I have selected an instrument (a new one) for today'
+  - 'I have selected an instrument for today; I hope the show will be ok'
+  - 'This is not good (to say the least). I prefer to delete this item from the file'
+  - 'I am going to cross the border by passing gate #3 '
+  - 'I have preselected the characters 0x22 and 0x20 for my sequence'
+  - 'I have preselected the characters to concat (as it is a better option)'
+  - 'I have preselected the items to count (as it is a better option)'
+  - 'We need to check the bulkhead of the ship; we might need to insert some sealing to close it out (we can take it from behind)'
+  - 'g or 1234567'
+  - 'g and 1234567'
+  - 'send me a check or 100000$ cash'
+  - 'It seems that they will not negotiate with us and 100000 dollars is not something we can afford'
+  - |
+    Introduction: it all starts...
+  - |
+    Attention: John Smith
+  - |
+    Shopping-list:
+    Milk
+    Hot dogs
+    Cheese
+  - "Did you check out the viedo-game Red-Alert (it's a real time strategy game)?"
+  - 'The situation in the south caused the government to issue an alert (hopefully it will be better soon)'
+  - "To watch the Apple stock, I've set up a market-alert (it's very easy to set up)"
+  - 'The usual hourly meetings made me walk on eggshells'
+  - "Have you seen that movie about the medieval? (it's a documentary movie)"
+  - 'Did you check out the new algorithm for text retrieval? (it supposed to be very efficient)'
+  - 'Did you check out the new algorithm for text retrieval? (it supposed to be very efficient)'
+  - 'My email is john@importers.com'
+  - 'There are many possible encodings for data: UTF-7, UTF-8, base64 and so on'
+  - 'I think this is something we need to confirm (we discussed that before)'
+encoder:
+  - URL
+placeholder:
+  - URLParam
+  - HTMLForm
