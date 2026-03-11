@@ -1,0 +1,37 @@
+
+
+payload:
+  - |
+      <?xml version="1.0" encoding="UTF-8"?>
+      <configuration>
+         <system.webServer>
+            <handlers accessPolicy="Read, Script, Write">
+               <add name="web_config" path="*.config" verb="*" modules="IsapiModule" scriptProcessor="%windir%\system32\inetsrv\asp.dll" resourceType="Unspecified" requireAccess="Write" preCondition="bitness64" />         
+            </handlers>
+            <security>
+               <requestFiltering>
+                  <fileExtensions>
+                     <remove fileExtension=".config" />
+                  </fileExtensions>
+                  <hiddenSegments>
+                     <remove segment="web.config" />
+                  </hiddenSegments>
+               </requestFiltering>
+            </security>
+         </system.webServer>
+      </configuration>
+encoder:
+  - Plain
+placeholder:
+  - RawRequest:
+      method: POST
+      path: /
+      headers:
+        Content-Type: "multipart/form-data; boundary=bee3b1c4dbd3303d1f1b9a03ffd31afeaa"
+      body: |
+        --bee3b1c4dbd3303d1f1b9a03ffd31afeaa
+        Content-disposition: form-data; name="web.config"
+
+        {{payload}}
+        --bee3b1c4dbd3303d1f1b9a03ffd31afeaa--
+type: UploadFileInsecure
