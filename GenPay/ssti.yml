@@ -102,5 +102,4 @@ encoder:
   - URL
 placeholder:
   - URLParam
-  - HTMLForm
 type: SST Injection
