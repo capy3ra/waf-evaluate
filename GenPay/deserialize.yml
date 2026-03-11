@@ -5,5 +5,5 @@ payload:
 encoder:
   - Plain
 placeholder:
-  - MultiPartFormData
+  - HTMLMultipartForm
 type: DeserializePython

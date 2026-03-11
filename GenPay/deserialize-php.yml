@@ -27,7 +27,11 @@ payload:
   # Laminas/FD1
   - ''
 encoder:
-  - URLEncode
+  - Plain
 placeholder:
-  - URLParam
+  - RawRequest:
+      method: "GET"
+      path: "/"
+      headers:
+        Cookie: "token={{payload}}"
 type: DeserializePHP

